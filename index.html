@@ -1,440 +1,1680 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Santri Trading - Belajar Crypto, Saham, Bitcoin dan Trading dari dasar hingga mahir.">
-  <title>Santri Trading | Belajar Trading & Investasi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+```
+<title>Santri Trading — Belajar Saham & Crypto</title>
+
+<meta name="description"
+      content="Santri Trading adalah platform edukasi untuk belajar saham, cryptocurrency, analisis fundamental, technical analysis, risk management, dan psikologi trading dari nol.">
+
+<meta name="keywords"
+      content="Santri Trading, belajar saham, belajar crypto, trading, investasi, analisis fundamental, technical analysis, risk management">
+
+<meta name="author" content="Santri Trading">
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="#" class="logo">
-        <span class="logo-icon">₿</span>
-        <span>Santri<span class="gold">Trading</span></span>
-      </a>
+<!-- ==================================================
+     NAVBAR
+================================================== -->
 
-      <nav>
-        <a href="#belajar">Belajar</a>
+<header class="navbar">
+
+```
+<div class="container nav-container">
+
+    <a href="#home" class="brand">
+
+        <span class="brand-logo">ST</span>
+
+        <span class="brand-text">
+            <strong>Santri</strong>
+            Trading
+        </span>
+
+    </a>
+
+
+    <nav class="navigation">
+
         <a href="#tentang">Tentang</a>
-        <a href="#materi">Materi</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
+        <a href="#saham">Saham</a>
+        <a href="#crypto">Crypto</a>
+        <a href="#analisis">Analisis</a>
+        <a href="#cara-belajar">Cara Belajar</a>
+        <a href="#faq">FAQ</a>
 
-      <a href="#belajar" class="nav-button">Mulai Belajar</a>
-    </div>
-  </header>
+    </nav>
 
 
-  <!-- HERO -->
-  <main>
+    <a href="#mulai" class="nav-button">
+        Mulai Belajar
+    </a>
 
-    <section class="hero">
-      <div class="hero-bg"></div>
+</div>
+```
 
-      <div class="container hero-content">
+</header>
 
-        <div class="hero-text">
-          <div class="badge">
-            <span></span> Platform Edukasi Trading
-          </div>
+<main>
 
-          <h1>
-            Belajar Trading.
-            <br>
-            <span>Bangun Masa Depan.</span>
-          </h1>
+<!-- ==================================================
+     HERO
+================================================== -->
 
-          <p>
-            Pelajari dunia <strong>Crypto, Saham, Bitcoin</strong> dan trading
-            dengan cara yang sederhana, terstruktur, dan mudah dipahami.
-          </p>
+<section class="hero" id="home">
 
-          <div class="hero-buttons">
-            <a href="#belajar" class="btn-primary">
-              Mulai Belajar <span>→</span>
-            </a>
+```
+<div class="container hero-grid">
 
-            <a href="#materi" class="btn-secondary">
-              Lihat Materi
-            </a>
-          </div>
 
-          <div class="hero-stats">
-            <div>
-              <strong>50+</strong>
-              <span>Materi</span>
-            </div>
+    <div class="hero-content">
 
-            <div>
-              <strong>100%</strong>
-              <span>Edukasi</span>
-            </div>
-
-            <div>
-              <strong>24/7</strong>
-              <span>Akses</span>
-            </div>
-          </div>
+        <div class="hero-badge">
+            <span></span>
+            PLATFORM EDUKASI FINANSIAL
         </div>
 
 
-        <!-- MARKET CARD -->
-        <div class="market-card">
-          <div class="card-header">
-            <div>
-              <span class="small-label">MARKET OVERVIEW</span>
-              <h3>Market Hari Ini</h3>
-            </div>
-            <span class="live">
-              <i></i> LIVE
-            </span>
-          </div>
+        <h1>
+            Belajar
+            <span>Saham & Crypto</span>
+            dari Nol.
+        </h1>
 
-          <div class="chart">
+
+        <p class="hero-description">
+
+            Santri Trading adalah tempat untuk memahami
+            dunia saham dan cryptocurrency secara bertahap,
+            mulai dari konsep dasar, cara membaca pasar,
+            analisis, manajemen risiko, hingga psikologi.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a href="#cara-belajar" class="button button-primary">
+                Mulai Belajar →
+            </a>
+
+            <a href="#materi" class="button button-outline">
+                Lihat Materi
+            </a>
+
+        </div>
+
+
+        <div class="hero-info">
+
+            <div>
+                <strong>2</strong>
+                <span>Instrumen</span>
+            </div>
+
+            <div>
+                <strong>10+</strong>
+                <span>Materi Utama</span>
+            </div>
+
+            <div>
+                <strong>30</strong>
+                <span>Hari Roadmap</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-dashboard">
+
+        <div class="dashboard-header">
+
+            <span>Learning Dashboard</span>
+
+            <span class="status">
+                ● EDUKASI
+            </span>
+
+        </div>
+
+
+        <div class="dashboard-title">
+
+            <small>YOUR KNOWLEDGE</small>
+
+            <strong>
+                BUILDING...
+            </strong>
+
+        </div>
+
+
+        <div class="knowledge-chart">
+
             <div class="chart-grid"></div>
 
-            <svg viewBox="0 0 500 200" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#d6ad5b" stop-opacity=".35"/>
-                  <stop offset="100%" stop-color="#d6ad5b" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
-
-              <path
-                d="M0 160
-                   C30 150 45 155 65 130
-                   S100 145 125 115
-                   S160 125 185 95
-                   S215 115 240 80
-                   S270 95 295 65
-                   S325 85 350 50
-                   S380 70 405 42
-                   S440 55 465 25
-                   S490 35 500 15
-                   L500 200 L0 200 Z"
-                fill="url(#area)"
-              />
-
-              <path
-                d="M0 160
-                   C30 150 45 155 65 130
-                   S100 145 125 115
-                   S160 125 185 95
-                   S215 115 240 80
-                   S270 95 295 65
-                   S325 85 350 50
-                   S380 70 405 42
-                   S440 55 465 25
-                   S490 35 500 15"
-                fill="none"
-                stroke="#d6ad5b"
-                stroke-width="4"
-              />
-            </svg>
-
-            <div class="chart-price">+24.8%</div>
-          </div>
-
-          <div class="assets">
-
-            <div class="asset">
-              <div class="asset-icon bitcoin">₿</div>
-              <div>
-                <strong>Bitcoin</strong>
-                <span>BTC</span>
-              </div>
-              <div class="asset-price">
-                <strong>$67,420</strong>
-                <span class="up">+2.84%</span>
-              </div>
-            </div>
-
-            <div class="asset">
-              <div class="asset-icon ethereum">Ξ</div>
-              <div>
-                <strong>Ethereum</strong>
-                <span>ETH</span>
-              </div>
-              <div class="asset-price">
-                <strong>$3,842</strong>
-                <span class="up">+1.92%</span>
-              </div>
-            </div>
-
-            <div class="asset">
-              <div class="asset-icon stock">S</div>
-              <div>
-                <strong>Saham</strong>
-                <span>IDX</span>
-              </div>
-              <div class="asset-price">
-                <strong>7,245</strong>
-                <span class="up">+0.87%</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- TOPICS -->
-    <section class="topics" id="belajar">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="eyebrow">APA YANG KAMU PELAJARI?</span>
-          <h2>Kenali Dunia <span>Trading</span></h2>
-          <p>
-            Mulai dari dasar sampai memahami strategi dan analisis market.
-          </p>
-        </div>
-
-        <div class="topic-grid">
-
-          <article class="topic-card">
-            <div class="topic-number">01</div>
-            <div class="topic-icon">₿</div>
-            <h3>Crypto & Bitcoin</h3>
-            <p>
-              Pahami Bitcoin, blockchain, cryptocurrency,
-              altcoin dan cara kerja market crypto.
-            </p>
-            <a href="#">Pelajari →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-number">02</div>
-            <div class="topic-icon">▥</div>
-            <h3>Saham</h3>
-            <p>
-              Kenali saham, indeks, fundamental perusahaan
-              dan cara membaca pergerakan harga.
-            </p>
-            <a href="#">Pelajari →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-number">03</div>
-            <div class="topic-icon">◈</div>
-            <h3>Technical Analysis</h3>
-            <p>
-              Pelajari candlestick, support, resistance,
-              trendline dan indikator teknikal.
-            </p>
-            <a href="#">Pelajari →</a>
-          </article>
-
-          <article class="topic-card">
-            <div class="topic-number">04</div>
-            <div class="topic-icon">◎</div>
-            <h3>Risk Management</h3>
-            <p>
-              Belajar mengatur risiko, position sizing,
-              stop loss dan menjaga modal.
-            </p>
-            <a href="#">Pelajari →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="about" id="tentang">
-      <div class="container about-content">
-
-        <div class="about-visual">
-          <div class="circle circle-one"></div>
-          <div class="circle circle-two"></div>
-
-          <div class="about-logo">
-            <span>₿</span>
-          </div>
-
-          <div class="floating-card card-one">
-            <span>TRADING</span>
-            <strong>DISCIPLINE</strong>
-          </div>
-
-          <div class="floating-card card-two">
-            <span>RISK</span>
-            <strong>MANAGEMENT</strong>
-          </div>
-        </div>
-
-        <div class="about-text">
-          <span class="eyebrow">TENTANG SANTRI TRADING</span>
-
-          <h2>
-            Trading bukan
-            <span>jalan pintas.</span>
-          </h2>
-
-          <p>
-            Santri Trading hadir untuk membantu kamu memahami dunia
-            finansial dan trading melalui edukasi yang sederhana,
-            terstruktur, dan berbasis pengetahuan.
-          </p>
-
-          <p>
-            Kami percaya bahwa trader yang baik bukan hanya mencari
-            keuntungan, tetapi juga memahami risiko dan memiliki
-            disiplin dalam mengambil keputusan.
-          </p>
-
-          <div class="principles">
-            <div>
-              <span>✓</span>
-              <strong>Learn</strong>
-              <small>Pelajari ilmunya</small>
-            </div>
-
-            <div>
-              <span>✓</span>
-              <strong>Practice</strong>
-              <small>Latih strateginya</small>
-            </div>
-
-            <div>
-              <span>✓</span>
-              <strong>Discipline</strong>
-              <small>Jaga risikonya</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- MATERIAL -->
-    <section class="materials" id="materi">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="eyebrow">ROADMAP BELAJAR</span>
-          <h2>Mulai Dari <span>Dasar</span></h2>
-          <p>
-            Bangun pemahaman secara bertahap sebelum masuk ke strategi yang lebih kompleks.
-          </p>
-        </div>
-
-        <div class="roadmap">
-
-          <div class="roadmap-item">
-            <div class="roadmap-dot">01</div>
-            <div>
-              <span>LEVEL 01</span>
-              <h3>Trading Fundamental</h3>
-              <p>
-                Mengenal market, aset, exchange, saham, crypto,
-                candle dan istilah dasar trading.
-              </p>
-            </div>
-          </div>
-
-          <div class="roadmap-item">
-            <div class="roadmap-dot">02</div>
-            <div>
-              <span>LEVEL 02</span>
-              <h3>Technical Analysis</h3>
-              <p>
-                Membaca chart, trend, support, resistance,
-                volume dan indikator.
-              </p>
-            </div>
-          </div>
-
-          <div class="roadmap-item">
-            <div class="roadmap-dot">03</div>
-            <div>
-              <span>LEVEL 03</span>
-              <h3>Risk Management</h3>
-              <p>
-                Memahami risiko, stop loss, position sizing
-                dan pengelolaan modal.
-              </p>
-            </div>
-          </div>
-
-          <div class="roadmap-item">
-            <div class="roadmap-dot">04</div>
-            <div>
-              <span>LEVEL 04</span>
-              <h3>Trading Psychology</h3>
-              <p>
-                Membangun disiplin dan memahami pengaruh
-                emosi dalam pengambilan keputusan.
-              </p>
-            </div>
-          </div>
+            <div class="chart-line line-1"></div>
+            <div class="chart-line line-2"></div>
+            <div class="chart-line line-3"></div>
+            <div class="chart-line line-4"></div>
+            <div class="chart-line line-5"></div>
+            <div class="chart-line line-6"></div>
 
         </div>
 
-      </div>
-    </section>
+
+        <div class="learning-list">
+
+            <div class="learning-item">
+
+                <div class="learning-icon saham">
+                    S
+                </div>
+
+                <div>
+                    <strong>Saham</strong>
+                    <small>Equity Market</small>
+                </div>
+
+                <span>01</span>
+
+            </div>
 
 
-    <!-- CTA -->
-    <section class="cta" id="kontak">
-      <div class="container cta-box">
+            <div class="learning-item">
+
+                <div class="learning-icon crypto">
+                    ₿
+                </div>
+
+                <div>
+                    <strong>Crypto</strong>
+                    <small>Digital Asset</small>
+                </div>
+
+                <span>02</span>
+
+            </div>
+
+
+            <div class="learning-item">
+
+                <div class="learning-icon analysis">
+                    A
+                </div>
+
+                <div>
+                    <strong>Analisis</strong>
+                    <small>Fundamental & Technical</small>
+                </div>
+
+                <span>03</span>
+
+            </div>
+
+
+            <div class="learning-item">
+
+                <div class="learning-icon risk">
+                    R
+                </div>
+
+                <div>
+                    <strong>Risk Management</strong>
+                    <small>Protect Your Capital</small>
+                </div>
+
+                <span>04</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<section class="intro" id="tentang">
+
+```
+<div class="container">
+
+    <div class="intro-grid">
 
         <div>
-          <span class="eyebrow">READY TO LEARN?</span>
-          <h2>Jangan cuma ikut market.<br><span>Pahami market.</span></h2>
+
+            <span class="eyebrow">
+                01 — TENTANG SANTRI TRADING
+            </span>
+
+            <h2>
+                Ilmu dulu.
+                <span>Keputusan kemudian.</span>
+            </h2>
+
         </div>
 
-        <a href="#" class="btn-primary">
-          Mulai Perjalanan →
-        </a>
 
-      </div>
-    </section>
+        <div>
 
-  </main>
+            <p>
+                Dunia saham dan cryptocurrency bukan hanya
+                tentang membeli ketika harga turun dan menjual
+                ketika harga naik.
+            </p>
+
+            <p>
+                Ada banyak hal yang perlu dipahami:
+                bagaimana aset bekerja, bagaimana sebuah
+                perusahaan menghasilkan uang, bagaimana
+                blockchain bekerja, bagaimana membaca data,
+                bagaimana mengelola risiko, dan bagaimana
+                mengendalikan keputusan ketika pasar bergerak
+                tidak sesuai harapan.
+            </p>
+
+            <p>
+                Santri Trading dibuat untuk membantu kamu
+                mempelajari semua bagian tersebut secara
+                sistematis.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     SAHAM
+================================================== -->
+
+<section class="section dark" id="saham">
+
+```
+<div class="container">
 
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-content">
+    <div class="section-heading">
 
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-icon">₿</span>
-          <span>Santri<span class="gold">Trading</span></span>
-        </a>
+        <span class="eyebrow light">
+            02 — SAHAM
+        </span>
+
+        <h2>
+            Memahami dunia
+            <span>saham.</span>
+        </h2>
 
         <p>
-          Belajar trading dengan ilmu,<br>
-          disiplin dan manajemen risiko.
+            Saham merupakan instrumen yang menunjukkan
+            kepemilikan atas suatu perusahaan. Memahami
+            saham berarti memahami bisnis, laporan keuangan,
+            valuasi, kondisi ekonomi, dan risiko.
         </p>
-      </div>
-
-      <div class="footer-links">
-        <a href="#belajar">Belajar</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#materi">Materi</a>
-        <a href="#kontak">Kontak</a>
-      </div>
 
     </div>
 
-    <div class="container copyright">
-      <span>© 2026 Santri Trading. All rights reserved.</span>
-      <span>Edukasi, bukan ajakan investasi.</span>
+
+
+    <div class="definition-grid">
+
+
+        <article class="definition-card">
+
+            <span class="number">01</span>
+
+            <h3>Apa itu saham?</h3>
+
+            <p>
+                Saham adalah bukti kepemilikan atas suatu
+                perusahaan. Ketika seseorang memiliki saham,
+                ia memiliki bagian tertentu dari perusahaan
+                tersebut sesuai jumlah kepemilikannya.
+            </p>
+
+        </article>
+
+
+        <article class="definition-card">
+
+            <span class="number">02</span>
+
+            <h3>Bagaimana harga bergerak?</h3>
+
+            <p>
+                Harga saham terbentuk melalui aktivitas
+                permintaan dan penawaran di pasar. Faktor
+                seperti kinerja perusahaan, kondisi ekonomi,
+                suku bunga, industri, berita, dan sentimen
+                dapat memengaruhi harga.
+            </p>
+
+        </article>
+
+
+        <article class="definition-card">
+
+            <span class="number">03</span>
+
+            <h3>Dari mana keuntungan berasal?</h3>
+
+            <p>
+                Pemegang saham dapat memperoleh hasil dari
+                perubahan harga saham dan, pada perusahaan
+                tertentu, pembagian dividen. Keduanya tidak
+                bersifat pasti.
+            </p>
+
+        </article>
+
+
     </div>
-  </footer>
+
+
+
+    <div class="stock-topics">
+
+        <div class="topic">
+
+            <span>01</span>
+
+            <h3>Emiten</h3>
+
+            <p>
+                Perusahaan yang menerbitkan saham kepada publik.
+            </p>
+
+        </div>
+
+
+        <div class="topic">
+
+            <span>02</span>
+
+            <h3>Bursa</h3>
+
+            <p>
+                Tempat dan sistem yang memfasilitasi perdagangan
+                efek sesuai aturan yang berlaku.
+            </p>
+
+        </div>
+
+
+        <div class="topic">
+
+            <span>03</span>
+
+            <h3>Dividen</h3>
+
+            <p>
+                Pembagian laba kepada pemegang saham sesuai
+                kebijakan perusahaan.
+            </p>
+
+        </div>
+
+
+        <div class="topic">
+
+            <span>04</span>
+
+            <h3>Market Cap</h3>
+
+            <p>
+                Nilai kapitalisasi perusahaan berdasarkan
+                harga saham dan jumlah saham beredar.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     CRYPTO
+================================================== -->
+
+<section class="section" id="crypto">
+
+```
+<div class="container crypto-grid">
+
+
+    <div class="crypto-visual">
+
+        <div class="crypto-circle">
+            ₿
+        </div>
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <div class="crypto-label label-one">
+            BLOCKCHAIN
+        </div>
+
+        <div class="crypto-label label-two">
+            DIGITAL ASSET
+        </div>
+
+        <div class="crypto-label label-three">
+            DECENTRALIZED
+        </div>
+
+    </div>
+
+
+
+    <div class="crypto-content">
+
+        <span class="eyebrow">
+            03 — CRYPTOCURRENCY
+        </span>
+
+        <h2>
+            Memahami teknologi
+            <span>aset digital.</span>
+        </h2>
+
+        <p>
+            Cryptocurrency adalah aset digital yang menggunakan
+            teknologi kriptografi. Banyak cryptocurrency berjalan
+            di atas jaringan blockchain yang mencatat transaksi
+            secara terdistribusi.
+        </p>
+
+        <p>
+            Ekosistem crypto mencakup berbagai jenis aset dan
+            teknologi. Bitcoin, misalnya, memiliki karakteristik
+            yang berbeda dengan token yang dibuat untuk aplikasi
+            tertentu.
+        </p>
+
+
+        <div class="crypto-points">
+
+            <div>
+                <strong>01</strong>
+                <span>Blockchain</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Bitcoin</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Altcoin & Token</span>
+            </div>
+
+            <div>
+                <strong>04</strong>
+                <span>Wallet & Security</span>
+            </div>
+
+            <div>
+                <strong>05</strong>
+                <span>Volatilitas</span>
+            </div>
+
+            <div>
+                <strong>06</strong>
+                <span>On-chain Basics</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     COMPARISON
+================================================== -->
+
+<section class="section soft" id="perbandingan">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            04 — PERBANDINGAN
+        </span>
+
+        <h2>
+            Saham dan crypto
+            <span>tidak sama.</span>
+        </h2>
+
+        <p>
+            Keduanya dapat dipelajari sebagai bagian dari
+            dunia aset, tetapi memiliki karakteristik yang
+            berbeda.
+        </p>
+
+    </div>
+
+
+    <div class="comparison-table">
+
+        <div class="comparison-row header">
+
+            <div>Aspek</div>
+            <div>Saham</div>
+            <div>Crypto</div>
+
+        </div>
+
+
+        <div class="comparison-row">
+
+            <div>Kepemilikan</div>
+
+            <div>
+                Kepemilikan atas bagian perusahaan.
+            </div>
+
+            <div>
+                Kepemilikan aset/token digital
+                dengan karakteristik yang bergantung
+                pada proyek dan jaringannya.
+            </div>
+
+        </div>
+
+
+        <div class="comparison-row">
+
+            <div>Teknologi</div>
+
+            <div>
+                Sistem pasar modal.
+            </div>
+
+            <div>
+                Blockchain dan kriptografi.
+            </div>
+
+        </div>
+
+
+        <div class="comparison-row">
+
+            <div>Volatilitas</div>
+
+            <div>
+                Dapat berfluktuasi.
+            </div>
+
+            <div>
+                Dapat sangat tinggi pada banyak aset.
+            </div>
+
+        </div>
+
+
+        <div class="comparison-row">
+
+            <div>Analisis</div>
+
+            <div>
+                Fundamental, technical, ekonomi.
+            </div>
+
+            <div>
+                Fundamental proyek, technical,
+                tokenomics, dan data jaringan.
+            </div>
+
+        </div>
+
+
+        <div class="comparison-row">
+
+            <div>Risiko</div>
+
+            <div>
+                Risiko bisnis, pasar, ekonomi,
+                dan lainnya.
+            </div>
+
+            <div>
+                Risiko pasar, teknologi, keamanan,
+                proyek, regulasi, dan lainnya.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     ANALISIS
+================================================== -->
+
+<section class="section" id="analisis">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            05 — ANALISIS PASAR
+        </span>
+
+        <h2>
+            Belajar membaca pasar
+            <span>secara menyeluruh.</span>
+        </h2>
+
+        <p>
+            Analisis membantu kita membuat keputusan berdasarkan
+            informasi dan metode yang jelas, bukan semata-mata
+            mengikuti emosi atau tren.
+        </p>
+
+    </div>
+
+
+    <div class="analysis-grid">
+
+
+        <article class="analysis-card">
+
+            <div class="analysis-number">
+                F
+            </div>
+
+            <span class="card-label">
+                FUNDAMENTAL
+            </span>
+
+            <h3>
+                Fundamental Analysis
+            </h3>
+
+            <p>
+                Digunakan untuk memahami kondisi ekonomi,
+                bisnis, perusahaan, atau proyek.
+            </p>
+
+
+            <ul>
+
+                <li>Laporan keuangan</li>
+                <li>Pendapatan</li>
+                <li>Laba bersih</li>
+                <li>Arus kas</li>
+                <li>Utang</li>
+                <li>Margin</li>
+                <li>ROE</li>
+                <li>Valuasi</li>
+
+            </ul>
+
+        </article>
+
+
+
+        <article class="analysis-card">
+
+            <div class="analysis-number">
+                T
+            </div>
+
+            <span class="card-label">
+                TECHNICAL
+            </span>
+
+            <h3>
+                Technical Analysis
+            </h3>
+
+            <p>
+                Mempelajari pergerakan harga dan volume
+                untuk mengenali struktur pasar.
+            </p>
+
+
+            <ul>
+
+                <li>Candlestick</li>
+                <li>Trend</li>
+                <li>Support</li>
+                <li>Resistance</li>
+                <li>Volume</li>
+                <li>Moving Average</li>
+                <li>Price Action</li>
+                <li>Market Structure</li>
+
+            </ul>
+
+        </article>
+
+
+
+        <article class="analysis-card">
+
+            <div class="analysis-number">
+                R
+            </div>
+
+            <span class="card-label">
+                RISK
+            </span>
+
+            <h3>
+                Risk Management
+            </h3>
+
+            <p>
+                Mengatur risiko agar satu keputusan tidak
+                menyebabkan kerugian yang tidak terkendali.
+            </p>
+
+
+            <ul>
+
+                <li>Position sizing</li>
+                <li>Risk per trade</li>
+                <li>Risk-reward</li>
+                <li>Stop loss</li>
+                <li>Diversifikasi</li>
+                <li>Drawdown</li>
+                <li>Trading journal</li>
+                <li>Capital preservation</li>
+
+            </ul>
+
+        </article>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     CARA BELAJAR
+================================================== -->
+
+<section class="section dark" id="cara-belajar">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow light">
+            06 — CARA BELAJAR
+        </span>
+
+        <h2>
+            Belajar dari nol
+            <span>secara bertahap.</span>
+        </h2>
+
+        <p>
+            Jangan langsung mengejar strategi trading.
+            Bangun fondasi terlebih dahulu.
+        </p>
+
+    </div>
+
+
+
+    <div class="learning-roadmap">
+
+
+        <article class="roadmap-card">
+
+            <div class="roadmap-number">
+                01
+            </div>
+
+            <div>
+
+                <span>
+                    MINGGU 1
+                </span>
+
+                <h3>
+                    Kenali Dunia Finansial
+                </h3>
+
+                <p>
+                    Pelajari apa itu aset, investasi,
+                    trading, saham, crypto, return,
+                    risiko, volatilitas, dan bagaimana
+                    pasar bekerja.
+                </p>
+
+                <strong>
+                    Target: memahami istilah dasar.
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="roadmap-card">
+
+            <div class="roadmap-number">
+                02
+            </div>
+
+            <div>
+
+                <span>
+                    MINGGU 2
+                </span>
+
+                <h3>
+                    Belajar Fundamental
+                </h3>
+
+                <p>
+                    Mulai membaca laporan keuangan perusahaan.
+                    Untuk crypto, pelajari proyek, kegunaan,
+                    tokenomics, teknologi, dan risiko.
+                </p>
+
+                <strong>
+                    Target: bisa menjelaskan alasan
+                    mengapa sebuah aset memiliki karakteristik tertentu.
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="roadmap-card">
+
+            <div class="roadmap-number">
+                03
+            </div>
+
+            <div>
+
+                <span>
+                    MINGGU 3
+                </span>
+
+                <h3>
+                    Belajar Technical Analysis
+                </h3>
+
+                <p>
+                    Pelajari candlestick, trend, support,
+                    resistance, volume, market structure,
+                    dan indikator dasar.
+                </p>
+
+                <strong>
+                    Target: mampu membaca chart secara sistematis.
+                </strong>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="roadmap-card">
+
+            <div class="roadmap-number">
+                04
+            </div>
+
+            <div>
+
+                <span>
+                    MINGGU 4
+                </span>
+
+                <h3>
+                    Risk & Trading Psychology
+                </h3>
+
+                <p>
+                    Pelajari position sizing, batas risiko,
+                    jurnal, disiplin, FOMO, overtrading,
+                    fear, greed, dan cara mengevaluasi kesalahan.
+                </p>
+
+                <strong>
+                    Target: memahami bahwa menjaga modal
+                    sama pentingnya dengan mencari peluang.
+                </strong>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     30 DAY CHALLENGE
+================================================== -->
+
+<section class="section" id="materi">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            07 — 30 DAY LEARNING PLAN
+        </span>
+
+        <h2>
+            Program belajar
+            <span>30 hari.</span>
+        </h2>
+
+        <p>
+            Gunakan jadwal ini sebagai contoh pola belajar.
+            Sesuaikan dengan waktu dan kemampuan masing-masing.
+        </p>
+
+    </div>
+
+
+    <div class="days-grid">
+
+
+        <div class="day-card">
+
+            <span>HARI 01–05</span>
+
+            <h3>
+                Basic Finance
+            </h3>
+
+            <p>
+                Pelajari konsep uang, aset, investasi,
+                trading, return, risiko dan volatilitas.
+            </p>
+
+        </div>
+
+
+        <div class="day-card">
+
+            <span>HARI 06–10</span>
+
+            <h3>
+                Saham
+            </h3>
+
+            <p>
+                Kenali perusahaan publik, emiten,
+                bursa, dividen, market cap,
+                dan dasar laporan keuangan.
+            </p>
+
+        </div>
+
+
+        <div class="day-card">
+
+            <span>HARI 11–15</span>
+
+            <h3>
+                Crypto
+            </h3>
+
+            <p>
+                Pelajari blockchain, Bitcoin,
+                token, wallet, security,
+                tokenomics dan risiko.
+            </p>
+
+        </div>
+
+
+        <div class="day-card">
+
+            <span>HARI 16–20</span>
+
+            <h3>
+                Fundamental
+            </h3>
+
+            <p>
+                Latihan membaca laporan keuangan
+                dan menganalisis bisnis atau proyek.
+            </p>
+
+        </div>
+
+
+        <div class="day-card">
+
+            <span>HARI 21–25</span>
+
+            <h3>
+                Technical
+            </h3>
+
+            <p>
+                Latihan membaca candlestick,
+                trend, support, resistance,
+                volume dan struktur pasar.
+            </p>
+
+        </div>
+
+
+        <div class="day-card">
+
+            <span>HARI 26–30</span>
+
+            <h3>
+                Risk & Psychology
+            </h3>
+
+            <p>
+                Buat jurnal, evaluasi keputusan,
+                pelajari risk management dan
+                kenali kesalahan psikologis.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     PSYCHOLOGY
+================================================== -->
+
+<section class="section soft">
+
+```
+<div class="container psychology-grid">
+
+
+    <div>
+
+        <span class="eyebrow">
+            08 — PSIKOLOGI
+        </span>
+
+        <h2>
+            Pasar menguji
+            <span>pikiran.</span>
+        </h2>
+
+        <p>
+            Banyak keputusan buruk terjadi bukan karena
+            seseorang tidak memiliki strategi, tetapi karena
+            strategi tersebut tidak dijalankan secara disiplin.
+        </p>
+
+    </div>
+
+
+    <div class="psychology-list">
+
+        <div>
+
+            <strong>FOMO</strong>
+
+            <p>
+                Takut tertinggal ketika harga bergerak
+                dan akhirnya mengambil keputusan tanpa
+                rencana yang jelas.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <strong>OVERTRADING</strong>
+
+            <p>
+                Terlalu sering melakukan transaksi tanpa
+                alasan yang cukup kuat.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <strong>REVENGE TRADING</strong>
+
+            <p>
+                Mengambil keputusan berikutnya hanya untuk
+                mencoba menutupi kerugian sebelumnya.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <strong>GREED</strong>
+
+            <p>
+                Keinginan mendapatkan hasil lebih besar
+                dapat membuat seseorang mengabaikan risiko.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     GLOSSARY
+================================================== -->
+
+<section class="section dark">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="eyebrow light">
+            09 — GLOSSARY
+        </span>
+
+        <h2>
+            Istilah penting
+            <span>di pasar.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="glossary-grid">
+
+
+        <div class="glossary-card">
+
+            <strong>Bull Market</strong>
+
+            <p>
+                Kondisi pasar dengan kecenderungan
+                pergerakan harga naik.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Bear Market</strong>
+
+            <p>
+                Kondisi pasar dengan kecenderungan
+                pergerakan harga turun.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Volatility</strong>
+
+            <p>
+                Tingkat perubahan harga suatu aset
+                dalam periode tertentu.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Liquidity</strong>
+
+            <p>
+                Kemudahan suatu aset untuk diperdagangkan
+                tanpa perubahan harga yang besar.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Support</strong>
+
+            <p>
+                Area harga yang dalam analisis teknikal
+                dapat menjadi area penahan penurunan.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Resistance</strong>
+
+            <p>
+                Area harga yang dalam analisis teknikal
+                dapat menjadi area penahan kenaikan.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Stop Loss</strong>
+
+            <p>
+                Batas keluar yang direncanakan untuk
+                membatasi kerugian pada suatu posisi.
+            </p>
+
+        </div>
+
+
+        <div class="glossary-card">
+
+            <strong>Risk Reward</strong>
+
+            <p>
+                Perbandingan risiko yang direncanakan
+                dengan potensi hasil suatu transaksi.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     PRINCIPLES
+================================================== -->
+
+<section class="section" id="mulai">
+
+```
+<div class="container">
+
+    <div class="principles">
+
+        <div>
+
+            <span class="eyebrow">
+                10 — PRINSIP SANTRI TRADING
+            </span>
+
+            <h2>
+                Jangan kejar
+                <span>keuntungan instan.</span>
+            </h2>
+
+            <p>
+                Bangun pengetahuan terlebih dahulu.
+                Pasar akan selalu menyediakan kesempatan
+                untuk belajar.
+            </p>
+
+        </div>
+
+
+        <div class="principle-list">
+
+            <div>
+                <span>01</span>
+                <strong>
+                    Pahami aset sebelum membelinya.
+                </strong>
+            </div>
+
+            <div>
+                <span>02</span>
+                <strong>
+                    Selalu pertimbangkan risiko.
+                </strong>
+            </div>
+
+            <div>
+                <span>03</span>
+                <strong>
+                    Jangan membuat keputusan hanya karena FOMO.
+                </strong>
+            </div>
+
+            <div>
+                <span>04</span>
+                <strong>
+                    Gunakan jurnal untuk mengevaluasi proses.
+                </strong>
+            </div>
+
+            <div>
+                <span>05</span>
+                <strong>
+                    Jangan menganggap hasil masa lalu sebagai jaminan.
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     FAQ
+================================================== -->
+
+<section class="section" id="faq">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            11 — FAQ
+        </span>
+
+        <h2>
+            Pertanyaan
+            <span>yang sering ditanyakan.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="faq">
+
+
+        <details>
+
+            <summary>
+                Saya benar-benar pemula. Harus mulai dari mana?
+            </summary>
+
+            <p>
+                Mulailah dari konsep dasar finansial dan pahami
+                perbedaan antara saham, crypto, investasi,
+                trading, return, risiko, dan volatilitas.
+                Setelah fondasi tersebut cukup kuat, lanjutkan
+                ke fundamental analysis, technical analysis,
+                risk management, dan psikologi.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Apakah saham dan crypto bisa dipelajari bersamaan?
+            </summary>
+
+            <p>
+                Bisa. Namun untuk pemula, lebih mudah jika
+                memahami konsep dasar pasar terlebih dahulu
+                sebelum membandingkan berbagai instrumen.
+                Dengan begitu, kamu dapat melihat persamaan
+                dan perbedaannya secara lebih jelas.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Apakah Santri Trading memberikan sinyal beli dan jual?
+            </summary>
+
+            <p>
+                Fokus halaman ini adalah edukasi. Materi dirancang
+                untuk membantu pembaca memahami konsep dan proses
+                analisis, bukan memberikan jaminan keuntungan.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Apakah trading selalu menghasilkan keuntungan?
+            </summary>
+
+            <p>
+                Tidak. Semua aktivitas di pasar memiliki risiko.
+                Harga dapat bergerak berlawanan dengan perkiraan,
+                sehingga pemahaman risiko dan pengelolaan modal
+                merupakan bagian penting dalam pembelajaran.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Berapa modal yang diperlukan untuk belajar?
+            </summary>
+
+            <p>
+                Untuk tahap awal, fokus sebaiknya pada pembelajaran
+                dan latihan analisis. Kamu tidak harus menggunakan
+                modal besar untuk mempelajari konsep pasar.
+            </p>
+
+        </details>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ==================================================
+     CTA
+================================================== -->
+
+<section class="cta" id="cta">
+
+```
+<div class="container">
+
+    <span class="eyebrow light">
+        START YOUR JOURNEY
+    </span>
+
+    <h2>
+        Belajar sekarang.
+        <span>Bangun fondasi.</span>
+    </h2>
+
+    <p>
+        Tidak perlu terburu-buru. Pahami konsep,
+        latihan analisis, kelola risiko, kemudian
+        evaluasi prosesmu.
+    </p>
+
+    <a href="#cara-belajar" class="button button-light">
+        Mulai Roadmap Belajar →
+    </a>
+
+</div>
+```
+
+</section>
+
+</main>
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+```
+<div class="container">
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a href="#home" class="brand">
+
+                <span class="brand-logo">
+                    ST
+                </span>
+
+                <span class="brand-text">
+                    <strong>Santri</strong>
+                    Trading
+                </span>
+
+            </a>
+
+
+            <p>
+                Platform edukasi untuk memahami saham,
+                cryptocurrency, analisis pasar,
+                manajemen risiko, dan psikologi trading.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Belajar</h4>
+
+            <a href="#saham">Saham</a>
+            <a href="#crypto">Crypto</a>
+            <a href="#analisis">Analisis</a>
+            <a href="#cara-belajar">Cara Belajar</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Materi</h4>
+
+            <a href="#materi">Roadmap 30 Hari</a>
+            <a href="#perbandingan">Perbandingan</a>
+            <a href="#faq">FAQ</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Disclaimer</h4>
+
+            <p>
+                Konten Santri Trading bersifat edukasi
+                dan bukan merupakan rekomendasi untuk
+                membeli atau menjual aset tertentu.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Santri Trading
+        </span>
+
+        <span>
+            Belajar • Analisis • Disiplin
+        </span>
+
+    </div>
+
+</div>
+```
+
+</footer>
 
 </body>
 </html>
