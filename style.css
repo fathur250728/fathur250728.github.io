@@ -1,28 +1,31 @@
 /* =========================================
    SANTRI TRADING
-   Modern Financial Education Landing Page
+   MODERN LANDING PAGE
 ========================================= */
 
 :root {
-    --bg: #07110d;
-    --bg-soft: #0b1813;
-    --card: #0d1d17;
-    --card-light: #11271e;
+
+    --background: #050b08;
+    --background-2: #08120d;
+    --card: #0b1812;
+    --card-2: #0e2018;
 
     --green: #19e68c;
-    --green-dark: #0db96e;
+    --green-dark: #0dbd70;
 
-    --white: #f5faf7;
-    --text: #b5c4bc;
-    --muted: #708078;
+    --white: #f3f8f5;
+    --text: #aebdb5;
+    --muted: #64736b;
 
-    --border: rgba(255,255,255,0.09);
+    --border: rgba(255,255,255,.08);
 
     --max-width: 1180px;
 }
 
 
-/* RESET */
+/* =========================================
+   RESET
+========================================= */
 
 * {
     margin: 0;
@@ -35,10 +38,16 @@ html {
 }
 
 body {
+
     font-family: "Inter", sans-serif;
-    background: var(--bg);
+
+    background: var(--background);
+
     color: var(--white);
+
     line-height: 1.7;
+
+    overflow-x: hidden;
 }
 
 a {
@@ -47,7 +56,9 @@ a {
 }
 
 .container {
+
     width: min(92%, var(--max-width));
+
     margin: auto;
 }
 
@@ -57,22 +68,30 @@ a {
 ========================================= */
 
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
-    background: rgba(7, 17, 13, 0.86);
-    backdrop-filter: blur(18px);
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
 
     border-bottom: 1px solid var(--border);
+
+    background: rgba(5,11,8,.82);
+
+    backdrop-filter: blur(20px);
 }
 
-.nav-content {
+.nav-wrapper {
+
     min-height: 76px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 30px;
 }
 
@@ -80,12 +99,17 @@ a {
 /* LOGO */
 
 .logo {
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
+
+    font-size: 16px;
+
     font-weight: 600;
 
     white-space: nowrap;
@@ -95,60 +119,79 @@ a {
     color: var(--green);
 }
 
-.logo-icon {
+.logo-box {
+
     width: 38px;
+
     height: 38px;
 
     display: grid;
+
     place-items: center;
 
-    border-radius: 11px;
+    border-radius: 10px;
 
     background: var(--green);
-    color: #041009;
 
-    font-size: 13px;
+    color: #031008;
+
+    font-size: 12px;
+
     font-weight: 900;
 
-    box-shadow: 0 0 25px rgba(25,230,140,0.25);
+    box-shadow:
+        0 0 25px rgba(25,230,140,.25);
 }
 
 
-/* NAV LINKS */
+/* MENU */
 
-nav {
+.nav-menu {
+
     display: flex;
+
     align-items: center;
-    gap: 28px;
+
+    gap: 30px;
 }
 
-nav a {
+.nav-menu a {
+
     color: var(--text);
-    font-size: 14px;
+
+    font-size: 13px;
+
     transition: .25s;
 }
 
-nav a:hover {
+.nav-menu a:hover {
+
     color: var(--green);
 }
 
-.nav-button {
-    padding: 11px 18px;
 
-    border: 1px solid rgba(25,230,140,0.4);
-    border-radius: 9px;
+.nav-cta {
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(25,230,140,.35);
+
+    border-radius: 8px;
 
     color: var(--green);
 
-    font-size: 13px;
+    font-size: 12px;
+
     font-weight: 700;
 
     transition: .25s;
 }
 
-.nav-button:hover {
+.nav-cta:hover {
+
     background: var(--green);
-    color: #041009;
+
+    color: #031008;
 }
 
 
@@ -157,175 +200,237 @@ nav a:hover {
 ========================================= */
 
 .hero {
-    min-height: 700px;
+
+    min-height: 720px;
 
     display: flex;
+
     align-items: center;
 
     position: relative;
+
     overflow: hidden;
 
     background:
-        radial-gradient(circle at 80% 30%, rgba(25,230,140,.09), transparent 35%),
-        radial-gradient(circle at 20% 80%, rgba(25,230,140,.05), transparent 30%);
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(25,230,140,.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(25,230,140,.05),
+            transparent 30%
+        );
 }
 
-.hero::before {
-    content: "";
+
+.hero-background {
 
     position: absolute;
+
     inset: 0;
 
+    opacity: .4;
+
     background-image:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+        linear-gradient(
+            rgba(255,255,255,.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.025) 1px,
+            transparent 1px
+        );
 
     background-size: 60px 60px;
 
-    mask-image: linear-gradient(to bottom, black, transparent);
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
 }
 
-.hero-grid {
+
+.hero-wrapper {
+
     position: relative;
-    z-index: 1;
+
+    z-index: 2;
 
     display: grid;
+
     grid-template-columns: 1.05fr .95fr;
 
     gap: 80px;
+
     align-items: center;
 }
 
 
 /* HERO TEXT */
 
-.badge,
-.section-label {
+.hero-badge {
+
     display: inline-flex;
+
     align-items: center;
+
     gap: 8px;
 
-    color: var(--green);
-
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.badge {
-    padding: 8px 12px;
+    padding: 8px 13px;
 
     border: 1px solid rgba(25,230,140,.2);
+
     background: rgba(25,230,140,.05);
 
     border-radius: 50px;
 
-    margin-bottom: 22px;
+    color: var(--green);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+
+    margin-bottom: 24px;
 }
 
-.badge span {
-    font-size: 8px;
+.hero-badge span {
+    font-size: 7px;
 }
+
 
 .hero h1 {
-    max-width: 720px;
+
+    max-width: 700px;
 
     font-family: "Poppins", sans-serif;
 
-    font-size: clamp(42px, 5.5vw, 72px);
-    line-height: 1.05;
+    font-size: clamp(44px, 5.5vw, 72px);
+
+    line-height: 1.04;
+
     letter-spacing: -3px;
 
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
-.hero h1 span,
-.section-heading h2 span,
-.crypto-text h2 span,
-.risk-grid h2 span,
-.cta-box h2 span {
+.hero h1 span {
     color: var(--green);
 }
 
-.hero-text > p {
+
+.hero-content > p {
+
     max-width: 620px;
 
     color: var(--text);
 
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
 /* BUTTONS */
 
 .hero-buttons {
+
     display: flex;
+
     gap: 12px;
 
-    margin-top: 34px;
+    margin-top: 32px;
 }
 
+
 .btn {
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
-    padding: 14px 22px;
+    gap: 12px;
 
-    border-radius: 9px;
+    padding: 13px 21px;
 
-    font-size: 13px;
+    border-radius: 8px;
+
+    font-size: 12px;
+
     font-weight: 800;
 
     transition: .3s;
 }
 
-.btn.primary {
-    background: var(--green);
-    color: #041009;
+.btn-primary {
 
-    box-shadow: 0 10px 30px rgba(25,230,140,.14);
+    background: var(--green);
+
+    color: #031008;
+
+    box-shadow:
+        0 10px 30px rgba(25,230,140,.15);
 }
 
-.btn.primary:hover {
+.btn-primary:hover {
+
     transform: translateY(-3px);
 
-    box-shadow: 0 15px 35px rgba(25,230,140,.22);
+    box-shadow:
+        0 15px 40px rgba(25,230,140,.25);
 }
 
-.btn.secondary {
+.btn-outline {
+
     border: 1px solid var(--border);
+
     color: var(--white);
 }
 
-.btn.secondary:hover {
+.btn-outline:hover {
+
     border-color: var(--green);
+
     color: var(--green);
 }
 
 
-/* HERO INFO */
+/* HERO STATS */
 
-.hero-info {
+.hero-stats {
+
     display: flex;
+
     gap: 35px;
 
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
-.hero-info div {
+.hero-stat {
+
     display: flex;
+
     flex-direction: column;
 }
 
-.hero-info strong {
+.hero-stat strong {
+
     color: var(--green);
-    font-size: 13px;
+
+    font-size: 12px;
 }
 
-.hero-info span {
+.hero-stat span {
+
     color: var(--muted);
-    font-size: 11px;
+
+    font-size: 10px;
 }
 
 
@@ -333,199 +438,326 @@ nav a:hover {
    MARKET CARD
 ========================================= */
 
-.market-card {
-    padding: 30px;
+.hero-card {
+
+    padding: 28px;
 
     border: 1px solid var(--border);
+
     border-radius: 22px;
 
     background:
-        linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.01)
+        );
 
     box-shadow:
-        0 30px 100px rgba(0,0,0,.3),
-        inset 0 1px rgba(255,255,255,.05);
+        0 30px 100px rgba(0,0,0,.35);
 
     transform: rotate(1deg);
 }
 
-.card-top {
+
+.market-header {
+
     display: flex;
+
+    align-items: flex-start;
+
     justify-content: space-between;
+}
+
+.small-label {
 
     color: var(--muted);
 
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+}
+
+.market-header h3 {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 18px;
+
+    margin-top: 3px;
 }
 
 .live {
+
     color: var(--green);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
 }
 
-.market-main {
-    padding: 55px 0 30px;
+
+/* MARKET PRICE */
+
+.market-price {
+
+    padding: 45px 0 25px;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
-.market-main p {
+.market-price span {
+
     color: var(--muted);
-    font-size: 12px;
+
+    font-size: 10px;
 }
 
-.market-main h2 {
+.market-price strong {
+
     font-family: "Poppins", sans-serif;
-    font-size: 36px;
-    letter-spacing: 2px;
 
-    margin: 5px 0;
+    font-size: 35px;
+
+    letter-spacing: 2px;
 }
 
-.green {
+.market-price small {
+
     color: var(--green);
-    font-size: 12px;
+
+    font-size: 10px;
 }
 
 
 /* CHART */
 
-.chart {
-    height: 170px;
+.fake-chart {
+
+    height: 190px;
 
     position: relative;
 
     overflow: hidden;
 
     border-top: 1px solid var(--border);
+
     border-bottom: 1px solid var(--border);
 
-    background-image:
-        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    background:
+        linear-gradient(
+            rgba(255,255,255,.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.035) 1px,
+            transparent 1px
+        );
 
-    background-size: 35px 35px;
+    background-size: 40px 40px;
 }
 
-.chart-line {
-    position: absolute;
-
-    width: 130%;
-    height: 130%;
-
-    left: -10%;
-    top: 10%;
-
-    border-bottom: 3px solid var(--green);
-
-    transform:
-        rotate(-14deg)
-        skewX(-25deg);
-
-    filter: drop-shadow(0 0 8px rgba(25,230,140,.5));
-}
-
-.chart-dot {
-    width: 10px;
-    height: 10px;
+.chart-svg {
 
     position: absolute;
 
-    background: var(--green);
+    inset: 0;
+}
+
+.chart-svg svg {
+
+    width: 100%;
+
+    height: 100%;
+}
+
+.chart-svg polyline {
+
+    fill: none;
+
+    stroke: var(--green);
+
+    stroke-width: 3;
+
+    vector-effect: non-scaling-stroke;
+
+    filter:
+        drop-shadow(
+            0 0 8px rgba(25,230,140,.55)
+        );
+}
+
+.chart-point {
+
+    width: 9px;
+
+    height: 9px;
+
+    position: absolute;
 
     border-radius: 50%;
 
-    box-shadow: 0 0 15px rgba(25,230,140,.8);
+    background: var(--green);
+
+    box-shadow:
+        0 0 15px rgba(25,230,140,.8);
 }
 
-.dot-1 {
-    left: 15%;
-    top: 73%;
+.point-1 {
+    left: 24%;
+    top: 62%;
 }
 
-.dot-2 {
-    left: 42%;
-    top: 53%;
+.point-2 {
+    left: 48%;
+    top: 47%;
 }
 
-.dot-3 {
-    left: 67%;
-    top: 38%;
+.point-3 {
+    left: 71%;
+    top: 28%;
 }
 
-.dot-4 {
-    right: 10%;
-    top: 15%;
+.point-4 {
+    right: 5%;
+    top: 8%;
 }
 
 
-/* MARKET STATS */
+/* MARKET BOTTOM */
 
-.market-stats {
+.market-bottom {
+
     display: grid;
+
     grid-template-columns: repeat(3,1fr);
 
-    gap: 12px;
+    gap: 10px;
 
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
-.market-stats div {
-    padding: 13px;
-
-    border: 1px solid var(--border);
-    border-radius: 9px;
+.market-bottom div {
 
     display: flex;
+
     flex-direction: column;
+
+    padding: 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
 }
 
-.market-stats small {
+.market-bottom span {
+
     color: var(--muted);
-    font-size: 8px;
+
+    font-size: 7px;
+
     letter-spacing: 1px;
 }
 
-.market-stats strong {
-    margin: 3px 0;
+.market-bottom strong {
 
-    font-size: 16px;
+    font-size: 15px;
+
+    margin: 2px 0;
+}
+
+.market-bottom small {
+
+    color: var(--green);
+
+    font-size: 8px;
 }
 
 
 /* =========================================
-   SECTIONS
+   SECTION
 ========================================= */
 
 .section {
+
     padding: 120px 0;
 }
 
 .intro {
-    background: #08140f;
+
+    background: var(--background-2);
 }
 
-.dark-section {
-    background: #050d09;
+.dark {
+
+    background: #030906;
 }
 
-.section-heading {
-    max-width: 750px;
-    margin-bottom: 55px;
+.crypto {
+
+    background:
+        radial-gradient(
+            circle at 10% 50%,
+            rgba(25,230,140,.06),
+            transparent 28%
+        ),
+        var(--background-2);
 }
 
-.section-heading.center {
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
+.analysis {
+
+    background: var(--background);
+}
+
+.risk {
+
+    background: #030906;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+
+    max-width: 650px;
+}
+
+.section-title.center {
+
+    max-width: 760px;
+
     text-align: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
 }
 
-.section-heading h2,
-.crypto-text h2,
-.risk-grid h2 {
+.label {
+
+    color: var(--green);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+
     font-family: "Poppins", sans-serif;
 
-    font-size: clamp(34px, 4vw, 53px);
+    font-size: clamp(35px, 4vw, 53px);
 
     line-height: 1.1;
 
@@ -534,11 +766,16 @@ nav a:hover {
     margin: 14px 0 20px;
 }
 
-.section-heading p,
-.crypto-text > p,
-.risk-grid > div > p {
+.section-title h2 span {
+
+    color: var(--green);
+}
+
+.section-title p {
+
     color: var(--text);
-    font-size: 15px;
+
+    font-size: 14px;
 }
 
 
@@ -546,192 +783,356 @@ nav a:hover {
    FEATURES
 ========================================= */
 
-.features {
+.feature-grid {
+
     display: grid;
+
     grid-template-columns: repeat(3,1fr);
 
-    gap: 18px;
+    gap: 17px;
+
+    margin-top: 55px;
 }
 
 .feature-card {
-    padding: 32px;
+
+    padding: 30px;
 
     border: 1px solid var(--border);
-    border-radius: 16px;
 
-    background: rgba(255,255,255,.018);
+    border-radius: 15px;
+
+    background: rgba(255,255,255,.015);
 
     transition: .3s;
 }
 
 .feature-card:hover {
-    transform: translateY(-7px);
-    border-color: rgba(25,230,140,.35);
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(25,230,140,.35);
 }
 
-.feature-icon {
-    width: 44px;
-    height: 44px;
+.feature-number {
+
+    width: 43px;
+
+    height: 43px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 10px;
 
     background: rgba(25,230,140,.08);
+
     color: var(--green);
 
-    font-size: 12px;
+    font-size: 11px;
+
     font-weight: 800;
 
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .feature-card h3 {
+
     font-family: "Poppins", sans-serif;
+
     font-size: 18px;
 
     margin-bottom: 10px;
 }
 
 .feature-card p {
+
     color: var(--text);
-    font-size: 13px;
+
+    font-size: 12px;
 }
 
 
 /* =========================================
-   LEARNING CARDS
+   TWO COLUMN
 ========================================= */
 
-.learning-grid {
+.two-column {
+
     display: grid;
 
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 15px;
-}
-
-.learning-card {
-    min-height: 230px;
-
-    padding: 28px;
-
-    border: 1px solid var(--border);
-    border-radius: 14px;
-
-    background: linear-gradient(
-        145deg,
-        rgba(255,255,255,.025),
-        rgba(255,255,255,.01)
-    );
-
-    transition: .3s;
-}
-
-.learning-card:hover {
-    border-color: rgba(25,230,140,.35);
-    transform: translateY(-5px);
-}
-
-.number {
-    color: var(--green);
-
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.learning-card h3 {
-    font-family: "Poppins", sans-serif;
-
-    font-size: 18px;
-
-    margin: 18px 0 10px;
-}
-
-.learning-card p {
-    color: var(--text);
-    font-size: 13px;
-}
-
-
-/* =========================================
-   CRYPTO
-========================================= */
-
-.crypto-section {
-    background:
-        radial-gradient(
-            circle at 15% 50%,
-            rgba(25,230,140,.07),
-            transparent 30%
-        ),
-        #08140f;
-}
-
-.crypto-content {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .9fr 1.1fr;
 
     gap: 90px;
 
     align-items: center;
 }
 
-.crypto-list {
+
+/* =========================================
+   TOPIC LIST
+========================================= */
+
+.topic-list {
+
     display: grid;
+
     gap: 12px;
 }
 
-.crypto-item {
-    display: flex;
-    align-items: center;
+.topic {
+
+    display: grid;
+
+    grid-template-columns: 42px 1fr;
+
     gap: 18px;
 
-    padding: 20px;
+    padding: 21px;
 
     border: 1px solid var(--border);
-    border-radius: 13px;
 
-    background: rgba(255,255,255,.018);
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,.015);
 
     transition: .3s;
 }
 
-.crypto-item:hover {
-    transform: translateX(6px);
+.topic:hover {
 
-    border-color: rgba(25,230,140,.35);
+    transform: translateX(5px);
+
+    border-color:
+        rgba(25,230,140,.3);
 }
 
-.crypto-symbol {
-    width: 45px;
-    height: 45px;
+.topic > span {
 
-    flex-shrink: 0;
-
-    display: grid;
-    place-items: center;
-
-    border-radius: 12px;
-
-    background: rgba(25,230,140,.09);
     color: var(--green);
 
-    font-size: 21px;
+    font-size: 10px;
+
     font-weight: 800;
 }
 
-.crypto-item h3 {
+.topic h3 {
+
     font-family: "Poppins", sans-serif;
+
     font-size: 15px;
+
+    margin-bottom: 4px;
 }
 
-.crypto-item p {
+.topic p {
+
     color: var(--muted);
+
+    font-size: 11px;
+}
+
+.text-link {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: var(--green);
+
     font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CRYPTO VISUAL
+========================================= */
+
+.crypto-layout {
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.crypto-visual {
+
+    min-height: 450px;
+
+    position: relative;
+
+    display: grid;
+
+    place-items: center;
+}
+
+.crypto-circle {
+
+    width: 260px;
+
+    height: 260px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(25,230,140,.25);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(25,230,140,.15),
+            transparent 65%
+        );
+
+    box-shadow:
+        0 0 100px rgba(25,230,140,.08);
+}
+
+.crypto-circle::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+
+    height: 330px;
+
+    border: 1px dashed
+        rgba(25,230,140,.15);
+
+    border-radius: 50%;
+}
+
+.crypto-symbol {
+
+    width: 110px;
+
+    height: 110px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 30px;
+
+    background: var(--green);
+
+    color: #031008;
+
+    font-size: 65px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 20px 60px
+        rgba(25,230,140,.25);
+}
+
+
+/* FLOATING CARDS */
+
+.crypto-mini-card {
+
+    position: absolute;
+
+    padding: 10px 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background: var(--card);
+
+    color: var(--green);
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.3);
+}
+
+.card-one {
+
+    top: 70px;
+
+    left: 20px;
+}
+
+.card-two {
+
+    right: 15px;
+
+    top: 150px;
+}
+
+.card-three {
+
+    bottom: 70px;
+
+    left: 70px;
+}
+
+
+/* CRYPTO TOPICS */
+
+.crypto-topics {
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+.crypto-topics > div {
+
+    display: flex;
+
+    gap: 12px;
+
+    padding: 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+}
+
+.crypto-topics strong {
+
+    color: var(--green);
+
+    font-size: 20px;
+}
+
+.crypto-topics span {
+
+    display: flex;
+
+    flex-direction: column;
+
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+.crypto-topics b {
+
+    color: var(--white);
+
+    font-size: 11px;
 }
 
 
@@ -739,42 +1140,54 @@ nav a:hover {
    ANALYSIS
 ========================================= */
 
-.analysis-section {
-    background: #07110d;
-}
-
 .analysis-grid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 18px;
 
     max-width: 900px;
 
-    margin: auto;
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 18px;
 }
 
 .analysis-card {
-    padding: 38px;
+
+    padding: 35px;
 
     border: 1px solid var(--border);
-    border-radius: 17px;
+
+    border-radius: 16px;
 
     background: var(--card);
 }
 
-.analysis-card.featured {
-    border-color: rgba(25,230,140,.3);
+.analysis-card.active {
+
+    border-color:
+        rgba(25,230,140,.35);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25,230,140,.06),
+            rgba(255,255,255,.01)
+        );
 }
 
-.analysis-number {
+.analysis-icon {
+
     width: 45px;
+
     height: 45px;
 
     display: grid;
+
     place-items: center;
 
-    border-radius: 10px;
+    border-radius: 11px;
 
     background: rgba(25,230,140,.08);
 
@@ -786,63 +1199,58 @@ nav a:hover {
 }
 
 .analysis-card h3 {
+
     font-family: "Poppins", sans-serif;
 
-    font-size: 22px;
+    font-size: 20px;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .analysis-card > p {
-    color: var(--text);
-    font-size: 13px;
 
-    margin-bottom: 25px;
+    color: var(--text);
+
+    font-size: 12px;
+
+    margin-bottom: 23px;
 }
 
 .analysis-card ul {
+
     list-style: none;
 
     display: grid;
-    gap: 9px;
+
+    gap: 8px;
 }
 
 .analysis-card li {
-    color: #c7d3cc;
 
-    font-size: 13px;
+    color: #c1cec7;
+
+    font-size: 12px;
 }
 
 
 /* =========================================
-   RISK MANAGEMENT
+   RISK
 ========================================= */
 
-.risk-section {
-    background: #050d09;
-}
+.risk-list {
 
-.risk-grid {
-    display: grid;
-
-    grid-template-columns: .9fr 1.1fr;
-
-    gap: 80px;
-
-    align-items: center;
-}
-
-.risk-box {
     border: 1px solid var(--border);
-    border-radius: 16px;
+
+    border-radius: 15px;
 
     overflow: hidden;
 }
 
-.risk-row {
+.risk-item {
+
     display: grid;
 
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 45px 1fr;
 
     gap: 15px;
 
@@ -851,25 +1259,32 @@ nav a:hover {
     border-bottom: 1px solid var(--border);
 }
 
-.risk-row:last-child {
+.risk-item:last-child {
+
     border-bottom: none;
 }
 
-.risk-row > span {
+.risk-item > span {
+
     color: var(--green);
 
-    font-size: 11px;
+    font-size: 10px;
+
     font-weight: 800;
 }
 
-.risk-row h3 {
+.risk-item h3 {
+
     font-family: "Poppins", sans-serif;
+
     font-size: 15px;
 }
 
-.risk-row p {
+.risk-item p {
+
     color: var(--muted);
-    font-size: 12px;
+
+    font-size: 11px;
 }
 
 
@@ -878,30 +1293,33 @@ nav a:hover {
 ========================================= */
 
 .roadmap {
-    max-width: 850px;
 
-    margin: auto;
+    max-width: 800px;
+
+    margin: 55px auto 0;
 
     position: relative;
 }
 
-.roadmap::before {
-    content: "";
+.roadmap-line {
 
     position: absolute;
 
-    left: 25px;
     top: 25px;
+
     bottom: 25px;
+
+    left: 24px;
 
     width: 1px;
 
-    background: rgba(25,230,140,.25);
+    background:
+        rgba(25,230,140,.25);
 }
 
 .roadmap-item {
+
     position: relative;
-    z-index: 1;
 
     display: grid;
 
@@ -913,45 +1331,56 @@ nav a:hover {
 }
 
 .roadmap-number {
+
     width: 50px;
+
     height: 50px;
 
     display: grid;
+
     place-items: center;
 
-    border: 1px solid rgba(25,230,140,.4);
+    border: 1px solid
+        rgba(25,230,140,.35);
 
     border-radius: 50%;
 
-    background: var(--bg);
+    background: #030906;
 
     color: var(--green);
 
-    font-size: 12px;
+    font-size: 10px;
+
     font-weight: 800;
+
+    z-index: 2;
 }
 
-.roadmap-item span {
+.roadmap-content span {
+
     color: var(--green);
 
-    font-size: 9px;
-    font-weight: 800;
+    font-size: 8px;
 
     letter-spacing: 2px;
+
+    font-weight: 800;
 }
 
-.roadmap-item h3 {
+.roadmap-content h3 {
+
     font-family: "Poppins", sans-serif;
 
-    font-size: 20px;
+    font-size: 19px;
 
     margin: 4px 0;
 }
 
-.roadmap-item p {
+.roadmap-content p {
+
     color: var(--text);
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -960,53 +1389,66 @@ nav a:hover {
 ========================================= */
 
 .cta {
+
     padding: 100px 0;
 
     background:
         radial-gradient(
-            circle at 50% 0%,
-            rgba(25,230,140,.12),
+            circle at center top,
+            rgba(25,230,140,.11),
             transparent 45%
-        ),
-        #08140f;
+        );
+
+    background-color:
+        var(--background-2);
 }
 
 .cta-box {
-    text-align: center;
 
     padding: 80px 30px;
 
-    border: 1px solid rgba(25,230,140,.2);
-    border-radius: 25px;
+    text-align: center;
+
+    border: 1px solid
+        rgba(25,230,140,.2);
+
+    border-radius: 24px;
 
     background:
         linear-gradient(
             145deg,
-            rgba(25,230,140,.06),
+            rgba(25,230,140,.05),
             rgba(255,255,255,.015)
         );
 }
 
 .cta-box h2 {
+
     font-family: "Poppins", sans-serif;
 
-    font-size: clamp(35px, 5vw, 58px);
+    font-size: clamp(35px,5vw,58px);
 
     line-height: 1.1;
 
     letter-spacing: -2px;
 
-    margin: 18px 0;
+    margin: 15px 0 18px;
+}
+
+.cta-box h2 span {
+
+    color: var(--green);
 }
 
 .cta-box p {
-    color: var(--text);
 
     max-width: 550px;
 
-    margin: 0 auto 28px;
+    margin: auto auto 27px;
 
-    font-size: 14px;
+    color: var(--text);
+
+    font-size: 13px;
 }
 
 
@@ -1015,12 +1457,14 @@ nav a:hover {
 ========================================= */
 
 footer {
-    background: #030906;
 
     padding-top: 70px;
+
+    background: #020604;
 }
 
-.footer-grid {
+.footer-wrapper {
+
     display: grid;
 
     grid-template-columns: 2fr 1fr 1fr;
@@ -1030,235 +1474,397 @@ footer {
     padding-bottom: 60px;
 }
 
-.footer-grid > div:first-child p {
-    max-width: 400px;
+.footer-brand p {
 
-    color: var(--muted);
+    max-width: 390px;
 
-    font-size: 13px;
-
-    margin-top: 18px;
-}
-
-.footer-grid h4 {
-    font-family: "Poppins", sans-serif;
-
-    margin-bottom: 15px;
-}
-
-.footer-grid > div:not(:first-child) {
-    display: flex;
-    flex-direction: column;
-
-    gap: 7px;
-}
-
-.footer-grid > div:not(:first-child) a {
     color: var(--muted);
 
     font-size: 12px;
 
+    margin-top: 17px;
+}
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.footer-column h4 {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
     transition: .2s;
 }
 
-.footer-grid > div:not(:first-child) a:hover {
+.footer-column a:hover {
+
     color: var(--green);
 }
 
-.copyright {
-    display: flex;
-    justify-content: space-between;
+.footer-bottom {
 
-    padding: 22px 0;
+    min-height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
 
     border-top: 1px solid var(--border);
 
     color: var(--muted);
 
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
 /* =========================================
-   RESPONSIVE
+   RESPONSIVE TABLET
 ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
-    nav {
+    .nav-menu {
         display: none;
     }
 
-    .hero {
-        padding: 90px 0;
-    }
+    .hero-wrapper {
 
-    .hero-grid,
-    .crypto-content,
-    .risk-grid {
         grid-template-columns: 1fr;
 
-        gap: 50px;
+        gap: 60px;
     }
 
-    .market-card {
+    .hero-content {
+
+        text-align: center;
+    }
+
+    .hero-content > p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+    .hero-stats {
+
+        justify-content: center;
+    }
+
+    .hero-card {
+
         max-width: 650px;
+
         width: 100%;
 
         margin: auto;
     }
 
-    .features,
-    .learning-grid {
-        grid-template-columns: repeat(2,1fr);
+    .two-column {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
+    .crypto-visual {
+
+        max-width: 500px;
+
+        width: 100%;
+
+        margin: auto;
     }
 
-    .footer-grid > div:first-child {
-        grid-column: 1 / -1;
+    .feature-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer-wrapper {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .footer-brand {
+
+        grid-column:
+            1 / -1;
     }
 }
 
 
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
 @media (max-width: 600px) {
 
-    .nav-button {
+    .section {
+
+        padding: 80px 0;
+    }
+
+    .navbar .nav-cta {
+
         display: none;
     }
 
     .hero {
+
         min-height: auto;
 
-        padding: 75px 0;
+        padding: 80px 0;
     }
 
     .hero h1 {
-        font-size: 43px;
+
+        font-size: 42px;
+
         letter-spacing: -2px;
     }
 
     .hero-buttons {
+
         flex-direction: column;
     }
 
-    .hero-buttons .btn {
+    .btn {
+
         width: 100%;
     }
 
-    .hero-info {
+    .hero-stats {
+
         gap: 18px;
 
-        justify-content: space-between;
+        justify-content:
+            space-between;
     }
 
-    .hero-info span {
-        font-size: 9px;
-    }
+    .hero-card {
 
-    .market-card {
         padding: 20px;
+
+        transform: none;
     }
 
-    .market-main {
-        padding: 40px 0 25px;
+    .market-price strong {
+
+        font-size: 28px;
     }
 
-    .market-main h2 {
-        font-size: 27px;
+    .fake-chart {
+
+        height: 160px;
     }
 
-    .market-stats {
-        gap: 7px;
-    }
+    .market-bottom {
 
-    .market-stats div {
-        padding: 10px;
-    }
-
-    .section {
-        padding: 80px 0;
-    }
-
-    .section-heading h2,
-    .crypto-text h2,
-    .risk-grid h2 {
-        font-size: 35px;
-    }
-
-    .features,
-    .learning-grid,
-    .analysis-grid {
         grid-template-columns: 1fr;
     }
 
-    .feature-card {
-        padding: 25px;
+    .section-title h2 {
+
+        font-size: 35px;
     }
 
-    .learning-card {
-        min-height: auto;
+    .feature-grid {
+
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
     }
 
-    .crypto-content {
-        gap: 40px;
+    .topic {
+
+        grid-template-columns:
+            32px 1fr;
+    }
+
+    .crypto-visual {
+
+        min-height: 360px;
+    }
+
+    .crypto-circle {
+
+        width: 210px;
+
+        height: 210px;
+    }
+
+    .crypto-circle::before {
+
+        width: 270px;
+
+        height: 270px;
+    }
+
+    .crypto-symbol {
+
+        width: 90px;
+
+        height: 90px;
+
+        font-size: 50px;
+    }
+
+    .card-one {
+
+        top: 30px;
+
+        left: 0;
+    }
+
+    .card-two {
+
+        top: 110px;
+
+        right: 0;
+    }
+
+    .card-three {
+
+        bottom: 35px;
+
+        left: 20px;
+    }
+
+    .crypto-topics {
+
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-grid {
+
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
     }
 
     .analysis-card {
+
         padding: 27px;
     }
 
+    .roadmap {
+
+        margin-top: 40px;
+    }
+
+    .roadmap-item {
+
+        grid-template-columns:
+            45px 1fr;
+
+        gap: 18px;
+    }
+
+    .roadmap-number {
+
+        width: 45px;
+
+        height: 45px;
+    }
+
+    .roadmap-line {
+
+        left: 22px;
+    }
+
     .cta {
+
         padding: 70px 0;
     }
 
     .cta-box {
+
         padding: 55px 20px;
     }
 
     .cta-box h2 {
+
         font-size: 36px;
     }
 
-    .footer-grid {
+    .footer-wrapper {
+
         grid-template-columns: 1fr 1fr;
 
-        gap: 40px;
+        gap: 35px;
     }
 
-    .copyright {
+    .footer-bottom {
+
         flex-direction: column;
-        gap: 8px;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+        gap: 5px;
+
+        padding: 18px 0;
     }
 }
 
 
-@media (max-width: 400px) {
+/* =========================================
+   VERY SMALL PHONE
+========================================= */
+
+@media (max-width: 380px) {
 
     .logo {
-        font-size: 14px;
+
+        font-size: 13px;
     }
 
-    .logo-icon {
+    .logo-box {
+
         width: 34px;
+
         height: 34px;
     }
 
     .hero h1 {
-        font-size: 37px;
+
+        font-size: 36px;
     }
 
-    .hero-info {
+    .hero-stats {
+
         gap: 10px;
     }
 
-    .market-stats {
-        grid-template-columns: 1fr;
-    }
+    .footer-wrapper {
 
-    .footer-grid {
         grid-template-columns: 1fr;
     }
 }
