@@ -1,173 +1,242 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santri Trading | Belajar Saham & Crypto</title>
-    <meta name="description" content="Belajar saham dan cryptocurrency dari dasar bersama Santri Trading.">
-    <link rel="stylesheet" href="/style.css">
+    <meta name="description" content="Santri Trading - Belajar trading dengan ilmu, disiplin, dan prinsip syariah.">
+    <title>Santri Trading | Belajar Trading dengan Ilmu</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-    <a href="/" class="brand">
-        <span class="logo">ST<span>↗</span></span>
-        <span>Santri <b>Trading</b></span>
-    </a>
-
-    <nav>
-        <a href="/" class="active">Beranda</a>
-        <a href="/tentang/">Tentang</a>
-        <a href="/pembelajaran/">Pembelajaran</a>
-        <a href="/kontak/">Kontak</a>
-    </nav>
-
-    <a class="nav-wa"
-       href="https://wa.me/6282253288988"
-       target="_blank" rel="noopener">
-       Hubungi Kami ↗
-    </a>
-</header>
-
-<main>
-    <section class="hero">
-        <div class="hero-text">
-            <span class="label">✦ PLATFORM BELAJAR INVESTASI</span>
-
-            <h1>Mulai Perjalananmu di Dunia <span>Trading.</span></h1>
-
-            <p>
-                Belajar saham dan cryptocurrency dari dasar.
-                Bangun pengetahuan, pahami risiko, dan tingkatkan
-                kemampuan finansialmu bersama Santri Trading.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="/pembelajaran/" class="btn-primary">
-                    Mulai Belajar →
-                </a>
-                <a href="/tentang/" class="btn-secondary">
-                    Kenali Kami
-                </a>
-            </div>
-
-            <div class="trust">
-                <span>✓ Materi pemula</span>
-                <span>✓ Belajar bertahap</span>
-                <span>✓ Pahami risiko</span>
-            </div>
-        </div>
-
-        <div class="hero-card">
-            <div class="market-top">
-                <div>
-                    <small>KENALI PASAR</small>
-                    <h3>Investment Learning</h3>
-                </div>
-                <span class="market-icon">↗</span>
-            </div>
-
-            <div class="chart">
-                <svg viewBox="0 0 400 180"
-                     role="img"
-                     aria-label="Ilustrasi grafik pergerakan pasar">
-                    <defs>
-                        <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#19c79a"
-                                  stop-opacity=".35"/>
-                            <stop offset="100%" stop-color="#19c79a"
-                                  stop-opacity="0"/>
-                        </linearGradient>
-                    </defs>
-                    <g stroke="#26394c" stroke-width="1">
-                        <path d="M0 35 H400 M0 75 H400 M0 115 H400 M0 155 H400"/>
-                    </g>
-                    <path d="M0 145 L35 120 L62 132 L95 82
-                             L126 103 L155 65 L188 88 L220 47
-                             L250 70 L280 30 L310 52 L345 18
-                             L375 34 L400 8 L400 180 L0 180 Z"
-                          fill="url(#area)"/>
-                    <polyline
-                        points="0,145 35,120 62,132 95,82 126,103
-                                155,65 188,88 220,47 250,70
-                                280,30 310,52 345,18 375,34 400,8"
-                        fill="none" stroke="#19c79a"
-                        stroke-width="3" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-            </div>
-
-            <div class="market-bottom">
-                <div>
-                    <small>FOKUS UTAMA</small>
-                    <h4>Saham & Crypto</h4>
-                </div>
-                <div class="market-badge">Belajar dari nol</div>
-            </div>
-
-            <p class="disclaimer">
-                Grafik hanya ilustrasi, bukan data pasar langsung.
-            </p>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="section-heading">
-            <span class="label">JALUR BELAJAR</span>
-            <h2>Pilih Bidang yang Ingin Kamu Pelajari</h2>
-            <p>Mulai dari konsep dasar sebelum mengambil keputusan investasi.</p>
-        </div>
-
-        <div class="feature-grid">
-            <a href="/pembelajaran/" class="feature">
-                <div class="feature-icon blue">▥</div>
-                <h3>Belajar Saham</h3>
-                <p>Mengenal saham, IHSG, analisis fundamental,
-                   analisis teknikal, dan manajemen risiko.</p>
-                <span class="read-more">Pelajari saham →</span>
-            </a>
-
-            <a href="/pembelajaran/" class="feature">
-                <div class="feature-icon green">₿</div>
-                <h3>Belajar Crypto</h3>
-                <p>Mengenal blockchain, Bitcoin, altcoin,
-                   volatilitas, dan keamanan aset digital.</p>
-                <span class="read-more">Pelajari crypto →</span>
-            </a>
-
-            <a href="/tentang/" class="feature">
-                <div class="feature-icon purple">✦</div>
-                <h3>Mindset Trader</h3>
-                <p>Belajar disiplin, mengendalikan emosi,
-                   dan menyusun rencana sebelum bertransaksi.</p>
-                <span class="read-more">Kenali kami →</span>
-            </a>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div>
-            <span class="label">MULAI LANGKAH PERTAMAMU</span>
-            <h2>Belajar dengan Ilmu, Bukan Sekadar Ikut Tren.</h2>
-            <p>Hubungi Santri Trading untuk informasi lebih lanjut.</p>
-        </div>
-        <a href="https://wa.me/6282253288988"
-           target="_blank" rel="noopener" class="btn-primary">
-            Chat WhatsApp →
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">☪</span>
+            <span>Santri<span class="gold">Trading</span></span>
         </a>
-    </section>
-</main>
 
-<footer>
-    <a href="/" class="brand">
-        <span class="logo">ST<span>↗</span></span>
-        <span>Santri <b>Trading</b></span>
-    </a>
-    <p>© 2026 Santri Trading. Belajar investasi dengan bijak.</p>
-    <a href="https://wa.me/6282253288988">WhatsApp: 0822-5328-8988</a>
-</footer>
+        <nav class="nav-menu">
+            <a href="#home">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#program">Program</a>
+            <a href="#prinsip">Prinsip</a>
+        </nav>
+
+        <a href="#kontak" class="btn btn-outline">Gabung Sekarang</a>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">✦ ILMU • DISIPLIN • AMANAH</span>
+
+                <h1>
+                    Menjadi Santri,<br>
+                    <span class="gold">Melek Finansial.</span>
+                </h1>
+
+                <p>
+                    Belajar memahami dunia trading dengan ilmu,
+                    mengutamakan manajemen risiko, dan menjadikan
+                    etika sebagai landasan setiap keputusan.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#program" class="btn btn-primary">
+                        Mulai Belajar <span>→</span>
+                    </a>
+                    <a href="#tentang" class="btn btn-secondary">
+                        Pelajari Kami
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-icon">✓</span>
+                    Edukasi, bukan janji keuntungan instan
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glow"></div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div>
+                            <span class="small-label">SANTRI TRADING</span>
+                            <h3>Belajar Analisis Pasar</h3>
+                        </div>
+                        <span class="chart-icon">↗</span>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart-grid"></div>
+                        <svg viewBox="0 0 420 200"
+                             preserveAspectRatio="none"
+                             role="img"
+                             aria-label="Ilustrasi grafik pergerakan harga">
+                            <defs>
+                                <linearGradient id="areaGradient"
+                                    x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%"
+                                        stop-color="#D9B568"
+                                        stop-opacity=".35"/>
+                                    <stop offset="100%"
+                                        stop-color="#D9B568"
+                                        stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M0 165 L35 145 L65 158 L100 110 L130 125 L165 82 L200 105 L235 60 L270 83 L305 40 L335 58 L370 22 L420 35 L420 200 L0 200 Z"
+                                fill="url(#areaGradient)"/>
+                            <polyline
+                                points="0,165 35,145 65,158 100,110 130,125 165,82 200,105 235,60 270,83 305,40 335,58 370,22 420,35"
+                                fill="none"
+                                stroke="#D9B568"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="chart-footer">
+                        <div>
+                            <span class="small-label">FOKUS UTAMA</span>
+                            <strong>Ilmu &amp; Disiplin</strong>
+                        </div>
+                        <div class="market-status">
+                            <span></span> EDUKASI
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-card">
+                    <span class="floating-icon">✦</span>
+                    <div>
+                        <strong>Utamakan Proses</strong>
+                        <p>Risiko harus dipahami</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang -->
+        <section class="about section" id="tentang">
+            <div class="section-heading">
+                <span class="eyebrow">TENTANG KAMI</span>
+                <h2>Trading dengan <span class="gold">Ilmu</span>,<br>
+                    Bukan Sekadar Emosi.</h2>
+                <p>
+                    Santri Trading adalah konsep edukasi finansial
+                    untuk membantu pemula memahami pasar, mengelola
+                    risiko, dan mengambil keputusan secara bertanggung jawab.
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <article class="value-card">
+                    <div class="value-icon">📚</div>
+                    <h3>Berbasis Ilmu</h3>
+                    <p>Memahami dasar pasar dan analisis sebelum mengambil keputusan.</p>
+                </article>
+
+                <article class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Disiplin</h3>
+                    <p>Membangun kebiasaan belajar, evaluasi, dan manajemen risiko.</p>
+                </article>
+
+                <article class="value-card">
+                    <div class="value-icon">☪</div>
+                    <h3>Etika Islami</h3>
+                    <p>Mendorong kejujuran dan kehati-hatian serta mengkaji kesesuaian syariah.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Program -->
+        <section class="program section" id="program">
+            <div class="section-heading">
+                <span class="eyebrow">PROGRAM PEMBELAJARAN</span>
+                <h2>Mulai dari <span class="gold">Dasar</span></h2>
+                <p>Belajar secara bertahap sesuai kemampuan dan pengalamanmu.</p>
+            </div>
+
+            <div class="program-grid">
+                <article class="program-card">
+                    <span class="program-number">01</span>
+                    <h3>Fundamental Trading</h3>
+                    <p>Mengenal pasar, instrumen, istilah, dan cara kerja trading.</p>
+                    <a href="#kontak">Pelajari program →</a>
+                </article>
+
+                <article class="program-card featured">
+                    <span class="program-number">02</span>
+                    <h3>Analisis Teknikal</h3>
+                    <p>Mempelajari grafik harga, tren, support, dan resistance.</p>
+                    <a href="#kontak">Pelajari program →</a>
+                </article>
+
+                <article class="program-card">
+                    <span class="program-number">03</span>
+                    <h3>Manajemen Risiko</h3>
+                    <p>Memahami risiko kerugian, ukuran posisi, dan disiplin modal.</p>
+                    <a href="#kontak">Pelajari program →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Prinsip -->
+        <section class="principle section" id="prinsip">
+            <div class="principle-content">
+                <span class="eyebrow">PEGANGAN KAMI</span>
+                <h2>Jangan Kejar Cepat Kaya.<br>
+                    <span class="gold">Kejar Ilmu dan Berkah.</span></h2>
+                <p>
+                    Tidak ada strategi yang menjamin keuntungan.
+                    Pahami risiko, hindari keputusan impulsif, dan
+                    pelajari aspek syariah instrumen sebelum bertransaksi.
+                </p>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section class="contact section" id="kontak">
+            <span class="eyebrow">LANGKAH PERTAMA</span>
+            <h2>Siap Mulai <span class="gold">Belajar?</span></h2>
+            <p>
+                Bangun pemahaman finansialmu bersama semangat belajar,
+                disiplin, dan tanggung jawab.
+            </p>
+            <!-- Ganti # dengan URL WhatsApp atau komunitas kamu -->
+            <a href="#" class="btn btn-primary"
+               aria-label="Hubungi Santri Trading">
+                Hubungi Kami <span>→</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">☪</span>
+            <span>Santri<span class="gold">Trading</span></span>
+        </a>
+
+        <p>© 2026 Santri Trading. Belajar dengan ilmu dan tanggung jawab.</p>
+        <p class="disclaimer">
+            Konten bersifat edukasi, bukan rekomendasi investasi.
+            Trading memiliki risiko kerugian.
+        </p>
+    </footer>
 
 </body>
 </html>
-```
