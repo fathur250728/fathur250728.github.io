@@ -1,486 +1,173 @@
-```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-:root {
-    --navy: #0b1830;
-    --blue: #2457d6;
-    --green: #19c79a;
-    --white: #ffffff;
-    --muted: #69778c;
-    --background: #f5f8fc;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', Arial, sans-serif;
-    background: var(--background);
-    color: var(--navy);
-    line-height: 1.7;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.navbar {
-    min-height: 82px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-    padding: 18px 7%;
-    background: var(--white);
-    border-bottom: 1px solid #e8edf4;
-}
-
-.brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 11px;
-    font-size: 18px;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-.brand b {
-    color: var(--blue);
-}
-
-.logo {
-    width: 43px;
-    height: 43px;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    background: var(--navy);
-    color: white;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: -1px;
-}
-
-.logo span {
-    color: var(--green);
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 27px;
-}
-
-nav a {
-    font-size: 13px;
-    font-weight: 600;
-    color: #617087;
-    transition: color .2s;
-}
-
-nav a:hover,
-nav a.active {
-    color: var(--blue);
-}
-
-.nav-wa {
-    padding: 11px 17px;
-    border-radius: 9px;
-    background: var(--blue);
-    color: white;
-    font-size: 12px;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: .2s;
-}
-
-.nav-wa:hover,
-.btn-primary:hover {
-    background: #1745b4;
-    transform: translateY(-2px);
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    align-items: center;
-    gap: 65px;
-    padding: 90px 9% 95px;
-    background:
-        radial-gradient(circle at 90% 20%, #e1edff 0, transparent 30%),
-        #ffffff;
-}
-
-.label {
-    display: inline-block;
-    color: var(--blue);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.6px;
-}
-
-.hero h1 {
-    max-width: 620px;
-    margin: 20px 0;
-    font-size: clamp(36px, 4.2vw, 57px);
-    line-height: 1.15;
-    letter-spacing: -2px;
-}
-
-.hero h1 span {
-    color: var(--blue);
-}
-
-.hero-text > p {
-    max-width: 540px;
-    color: var(--muted);
-    font-size: 15px;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 13px;
-    margin-top: 30px;
-}
-
-.btn-primary,
-.btn-secondary {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 13px 21px;
-    border-radius: 9px;
-    font-size: 13px;
-    font-weight: 700;
-    transition: .2s;
-}
-
-.btn-primary {
-    color: white;
-    background: var(--blue);
-}
-
-.btn-secondary {
-    border: 1px solid #dce4ef;
-    background: white;
-}
-
-.btn-secondary:hover {
-    border-color: var(--blue);
-    color: var(--blue);
-}
-
-.trust {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 17px;
-    margin-top: 27px;
-    color: #52647a;
-    font-size: 11px;
-}
-
-.trust span::first-letter {
-    color: var(--green);
-}
-
-.hero-card {
-    padding: 25px;
-    border: 1px solid #e4ebf4;
-    border-radius: 20px;
-    background: var(--navy);
-    color: white;
-    box-shadow: 0 24px 60px #0b18301c;
-}
-
-.market-top,
-.market-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-}
-
-.market-top small,
-.market-bottom small {
-    color: #a7b8cc;
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-
-.market-top h3 {
-    margin-top: 4px;
-    font-size: 17px;
-}
-
-.market-icon {
-    width: 43px;
-    height: 43px;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    background: #19334b;
-    color: var(--green);
-    font-size: 26px;
-}
-
-.chart {
-    margin: 24px 0;
-    padding: 12px 0;
-    border-top: 1px solid #26394c;
-    border-bottom: 1px solid #26394c;
-}
-
-.chart svg {
-    width: 100%;
-    display: block;
-}
-
-.market-bottom h4 {
-    margin-top: 4px;
-    font-size: 16px;
-}
-
-.market-badge {
-    padding: 7px 10px;
-    border-radius: 20px;
-    background: #153b39;
-    color: #60e5bd;
-    font-size: 10px;
-}
-
-.disclaimer {
-    margin-top: 18px;
-    color: #91a2b8;
-    font-size: 10px;
-}
-
-.features {
-    padding: 85px 9%;
-}
-
-.section-heading {
-    max-width: 600px;
-    margin: 0 auto 38px;
-    text-align: center;
-}
-
-.section-heading h2,
-.cta h2 {
-    margin: 12px 0;
-    font-size: clamp(26px, 3vw, 37px);
-    line-height: 1.25;
-    letter-spacing: -1px;
-}
-
-.section-heading p,
-.cta p {
-    color: var(--muted);
-    font-size: 13px;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.feature {
-    padding: 28px;
-    border: 1px solid #e7edf5;
-    border-radius: 15px;
-    background: white;
-    transition: .25s;
-}
-
-.feature:hover {
-    transform: translateY(-6px);
-    border-color: #bdcdf5;
-    box-shadow: 0 15px 35px #172e4b0d;
-}
-
-.feature-icon {
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    border-radius: 13px;
-    font-size: 23px;
-    font-weight: 800;
-}
-
-.blue {
-    background: #e8efff;
-    color: var(--blue);
-}
-
-.green {
-    background: #e0faf1;
-    color: #0d9c75;
-}
-
-.purple {
-    background: #f0eaff;
-    color: #7754d8;
-}
-
-.feature h3 {
-    margin: 19px 0 8px;
-    font-size: 17px;
-}
-
-.feature p {
-    min-height: 75px;
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 18px;
-    color: var(--blue);
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.cta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-    margin: 0 7% 75px;
-    padding: 40px;
-    border-radius: 18px;
-    background: #eaf0ff;
-}
-
-.cta h2 {
-    max-width: 580px;
-    font-size: 29px;
-}
-
-.cta .btn-primary {
-    flex-shrink: 0;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 27px 7%;
-    background: white;
-    border-top: 1px solid #e6ebf3;
-}
-
-footer p,
-footer > a:last-child {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-footer > a:last-child:hover {
-    color: var(--blue);
-}
-
-@media (max-width: 1000px) {
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-    nav {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .hero {
-        gap: 35px;
-        padding: 65px 6%;
-    }
-
-    .features {
-        padding: 65px 6%;
-    }
-
-    .feature-grid {
-        gap: 14px;
-    }
-
-    .feature {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 700px) {
-    .navbar {
-        padding: 15px 5%;
-        gap: 14px;
-    }
-
-    .brand {
-        font-size: 16px;
-    }
-
-    .nav-wa {
-        padding: 9px 11px;
-        font-size: 11px;
-    }
-
-    nav {
-        gap: 12px 20px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        padding: 55px 6%;
-    }
-
-    .hero h1 {
-        letter-spacing: -1px;
-    }
-
-    .hero-card {
-        padding: 20px;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feature p {
-        min-height: auto;
-    }
-
-    .cta {
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0 5% 45px;
-        padding: 27px;
-    }
-
-    .cta h2 {
-        font-size: 25px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 25px 6%;
-    }
-}
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santri Trading | Belajar Saham & Crypto</title>
+    <meta name="description" content="Belajar saham dan cryptocurrency dari dasar bersama Santri Trading.">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="/" class="brand">
+        <span class="logo">ST<span>↗</span></span>
+        <span>Santri <b>Trading</b></span>
+    </a>
+
+    <nav>
+        <a href="/" class="active">Beranda</a>
+        <a href="/tentang/">Tentang</a>
+        <a href="/pembelajaran/">Pembelajaran</a>
+        <a href="/kontak/">Kontak</a>
+    </nav>
+
+    <a class="nav-wa"
+       href="https://wa.me/6282253288988"
+       target="_blank" rel="noopener">
+       Hubungi Kami ↗
+    </a>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <span class="label">✦ PLATFORM BELAJAR INVESTASI</span>
+
+            <h1>Mulai Perjalananmu di Dunia <span>Trading.</span></h1>
+
+            <p>
+                Belajar saham dan cryptocurrency dari dasar.
+                Bangun pengetahuan, pahami risiko, dan tingkatkan
+                kemampuan finansialmu bersama Santri Trading.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="/pembelajaran/" class="btn-primary">
+                    Mulai Belajar →
+                </a>
+                <a href="/tentang/" class="btn-secondary">
+                    Kenali Kami
+                </a>
+            </div>
+
+            <div class="trust">
+                <span>✓ Materi pemula</span>
+                <span>✓ Belajar bertahap</span>
+                <span>✓ Pahami risiko</span>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="market-top">
+                <div>
+                    <small>KENALI PASAR</small>
+                    <h3>Investment Learning</h3>
+                </div>
+                <span class="market-icon">↗</span>
+            </div>
+
+            <div class="chart">
+                <svg viewBox="0 0 400 180"
+                     role="img"
+                     aria-label="Ilustrasi grafik pergerakan pasar">
+                    <defs>
+                        <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#19c79a"
+                                  stop-opacity=".35"/>
+                            <stop offset="100%" stop-color="#19c79a"
+                                  stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+                    <g stroke="#26394c" stroke-width="1">
+                        <path d="M0 35 H400 M0 75 H400 M0 115 H400 M0 155 H400"/>
+                    </g>
+                    <path d="M0 145 L35 120 L62 132 L95 82
+                             L126 103 L155 65 L188 88 L220 47
+                             L250 70 L280 30 L310 52 L345 18
+                             L375 34 L400 8 L400 180 L0 180 Z"
+                          fill="url(#area)"/>
+                    <polyline
+                        points="0,145 35,120 62,132 95,82 126,103
+                                155,65 188,88 220,47 250,70
+                                280,30 310,52 345,18 375,34 400,8"
+                        fill="none" stroke="#19c79a"
+                        stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="market-bottom">
+                <div>
+                    <small>FOKUS UTAMA</small>
+                    <h4>Saham & Crypto</h4>
+                </div>
+                <div class="market-badge">Belajar dari nol</div>
+            </div>
+
+            <p class="disclaimer">
+                Grafik hanya ilustrasi, bukan data pasar langsung.
+            </p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="section-heading">
+            <span class="label">JALUR BELAJAR</span>
+            <h2>Pilih Bidang yang Ingin Kamu Pelajari</h2>
+            <p>Mulai dari konsep dasar sebelum mengambil keputusan investasi.</p>
+        </div>
+
+        <div class="feature-grid">
+            <a href="/pembelajaran/" class="feature">
+                <div class="feature-icon blue">▥</div>
+                <h3>Belajar Saham</h3>
+                <p>Mengenal saham, IHSG, analisis fundamental,
+                   analisis teknikal, dan manajemen risiko.</p>
+                <span class="read-more">Pelajari saham →</span>
+            </a>
+
+            <a href="/pembelajaran/" class="feature">
+                <div class="feature-icon green">₿</div>
+                <h3>Belajar Crypto</h3>
+                <p>Mengenal blockchain, Bitcoin, altcoin,
+                   volatilitas, dan keamanan aset digital.</p>
+                <span class="read-more">Pelajari crypto →</span>
+            </a>
+
+            <a href="/tentang/" class="feature">
+                <div class="feature-icon purple">✦</div>
+                <h3>Mindset Trader</h3>
+                <p>Belajar disiplin, mengendalikan emosi,
+                   dan menyusun rencana sebelum bertransaksi.</p>
+                <span class="read-more">Kenali kami →</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div>
+            <span class="label">MULAI LANGKAH PERTAMAMU</span>
+            <h2>Belajar dengan Ilmu, Bukan Sekadar Ikut Tren.</h2>
+            <p>Hubungi Santri Trading untuk informasi lebih lanjut.</p>
+        </div>
+        <a href="https://wa.me/6282253288988"
+           target="_blank" rel="noopener" class="btn-primary">
+            Chat WhatsApp →
+        </a>
+    </section>
+</main>
+
+<footer>
+    <a href="/" class="brand">
+        <span class="logo">ST<span>↗</span></span>
+        <span>Santri <b>Trading</b></span>
+    </a>
+    <p>© 2026 Santri Trading. Belajar investasi dengan bijak.</p>
+    <a href="https://wa.me/6282253288988">WhatsApp: 0822-5328-8988</a>
+</footer>
+
+</body>
+</html>
 ```
